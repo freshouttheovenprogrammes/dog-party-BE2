@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #b4edeb;
+  height: 30px;
+}
+
+.header_font {
+  color: white;
+}
+
+.park_pic {
+  width: 100%;
+  height: 100%;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  position: absolute;
+}
+
+.subheader {
+  position: relative;
+  height: 150px;
+}
+
+.dog_pic1 {
+    border-radius: 50%;
+    position: absolute;
+}
