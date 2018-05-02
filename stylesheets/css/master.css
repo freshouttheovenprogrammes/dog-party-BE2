@@ -6,26 +6,29 @@
 
 a {
   text-decoration: none;
-  font-family: "AlegreyaSans", sans-serif; /* this didn't work on all a's either which is confusing */
+  font-family: "AlegreyaSans", sans-serif;
+  /* this didn't work on all a's either which is confusing */
+  /* really I would like to find a way to make sure all text on the page is following this font-family. should I have used that on the html or body element? */
 }
 
 .body {
   padding: 33px;
   /* tried to just call this on 'body' and it wasn't responding to my padding settings. */
   /* confused why it didn't work on the entire element of body */
+  /* the goal of this was to create a border around the page */
 }
 
 .nav-bar-container {
-  width: 100%;
+  width: 100%; /* is this good practice to ensure that the div will occupy the entire width or is there a more clever way? */
   background-color: aqua;
-  height: 10vh;
+  height: 10vh; /* I've been seeing this as a tool to help with responsive design */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .dog-icon {
-  display: inline-flex;
+  display: inline-flex; /* still learning a lot about flex and would like to get up on grid */
   padding: 9px;
 }
 
@@ -74,8 +77,8 @@ a {
 
 .bottom-dogs {
   border-radius: 50%;
-  height: 47%; 
-  padding-bottom: 20px;
+  height: 47%;
+  padding-bottom: 20px; /* should I have used the shorthand padding: TRBL; ? */
   padding-top: 20px;
 }
 
@@ -86,3 +89,6 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+/* I spent the most time trying to get the .section-center over the .section-background div. that would be super helpful and i don't nescissarly need the answer just to know whats some good stuff to start looking into. */
+/* I'd like to learn more about auto and inherit because I feel like understanding these things will make the process much faster and responsive */
