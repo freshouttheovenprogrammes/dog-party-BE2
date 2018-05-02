@@ -1,28 +1,88 @@
-header {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "AlegreyaSans", sans-serif; /* this didn't work on all a's either which is confusing */
+}
+
+.body {
+  padding: 33px;
+  /* tried to just call this on 'body' and it wasn't responding to my padding settings. */
+  /* confused why it didn't work on the entire element of body */
+}
+
+.nav-bar-container {
+  width: 100%;
+  background-color: aqua;
+  height: 10vh;
   display: flex;
   flex-direction: row;
-  background-color: #b4edeb;
-  height: 30px;
+  justify-content: space-between;
 }
 
-.header_font {
+.dog-icon {
+  display: inline-flex;
+  padding: 9px;
+}
+
+.nav-links {
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.nav-links a {
   color: white;
+  font-weight: 600;
 }
 
-.park_pic {
+.section-background {
   width: 100%;
-  height: 100%;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  position: absolute;
+  object-fit: cover; /* indentify which class actually needed this */
 }
 
-.subheader {
-  position: relative;
-  height: 150px;
+.background-img {
+  object-fit: cover; /* indentify which class actually needed this */
+  width: 100%;
+  max-height: 500px;
 }
 
-.dog_pic1 {
-    border-radius: 50%;
-    position: absolute;
+.section-center {
+  position: relative; /* study what this actually does more! */
+  /* really struggled with just getting this container to show inside of the section-background container */
+}
+
+.dog-1-pic {
+  border-radius: 50%;
+  border-width: thin; /* confused why no border shows */
+  border-color: cornflowerblue;
+}
+
+.btn {
+  border-width: 5px; /* I suck at borders? */
+  border-color: cornflowerblue;
+}
+
+.bottom-half {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.bottom-dogs {
+  border-radius: 50%;
+  height: 47%; 
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: steelblue;
+  height: 24%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
